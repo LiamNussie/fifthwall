@@ -1,0 +1,20 @@
+.client {
+    .last {
+        padding: 5rem 6rem 1rem 6rem;
+
+        .titlec {
+            color: #000;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 2rem;
+        }
+
+        .inner {
+            height: 600px;
+            background-image: url(../clients.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+    }
+}

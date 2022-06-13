@@ -1,0 +1,37 @@
+.media {
+    .proj-list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .project {
+            flex: 1 1 600px;
+            height: 434px;
+            padding: 2rem;
+            background-size: cover;
+            color: #fff;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                linear-gradient: (0deg, rgba(21, 21, 21, 0.18));
+                padding: 2rem;
+            }
+
+            .name {
+                margin-bottom: .6rem;
+                font-weight: 500;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

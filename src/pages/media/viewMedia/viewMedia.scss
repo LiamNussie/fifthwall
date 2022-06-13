@@ -1,0 +1,73 @@
+.view-media {
+    .timg {
+        height: 100vh;
+        background-image: gray;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bottomm {
+        padding: 6rem;
+
+        .desc {
+    
+            .date {
+                font-weight: 900;
+                font-size: 17px;
+                margin-bottom: 1rem;
+            }
+            .titlem {
+                font-size: 21px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            .para {
+                width: 680px;
+                line-height: 26px;
+                font-weight: 500;
+                padding-bottom: 6rem;
+            }
+            .descimg {
+                height: 700px;
+                background-color: gray;
+                background-size: cover;
+            }
+        }
+
+        .secm {
+            padding-top: 6rem;
+            box-sizing: border-box;
+            
+            .flexy {
+                display: flex;
+                
+                .point {
+                    font-size: 17px;
+                    line-height: 26px;
+                    margin: .8rem 0;
+
+                    .boldm {
+                        font-weight: 700;
+                    }
+                    .normal {
+                        width: 700px;
+                    }
+                }
+            }
+            .flex1 {
+                justify-content: flex-end;
+            }
+            .flex2 {
+                justify-content: flex-start;
+            }
+
+            .img {
+                height: 700px;
+                background-color: gray;
+                background-size: cover;
+                margin-top: 6rem;
+            }
+        }
+    }
+    
+}

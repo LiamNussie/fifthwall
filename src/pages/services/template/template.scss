@@ -1,0 +1,44 @@
+.templates {
+    padding: 5rem 6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    .topish {
+        display: flex;
+        align-items: baseline;
+        gap: 3rem;
+
+        .lefti {
+            flex: 1 1 700px;
+
+            .title {
+                font-size: 21px;
+                line-height: 35px;
+                width: 739px;
+                font-weight: 500;
+            }
+        }
+        .righti {
+            flex: 0 1 400px;
+
+            .lab {
+                font-weight: 700;
+                color: black;
+            }
+            ul {
+                line-height: 26px;
+                font-weight: 500;
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+    .gallery {
+        margin-top: 6rem;
+
+        img,
+        video {
+            width: 100%;
+            margin-bottom: .7rem;
+        }
+    }
+}

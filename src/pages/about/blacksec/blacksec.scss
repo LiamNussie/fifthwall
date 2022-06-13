@@ -1,0 +1,70 @@
+@font-face {
+    font-family: projFont2;
+    src: url(../../../font/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  
+.blacksec {
+    background-color: #000;
+    padding: 3rem 6rem;
+
+    .secxx {
+        display: flex;
+        justify-content: flex-end;
+        gap: 6rem;
+        align-items: center;
+
+        img {
+                width: 15%;
+            }
+            
+    }
+
+    .secx, 
+    .secxxx {
+        display: flex;
+        gap: 6rem;
+        align-items: center;
+
+        img {
+                width: 12%;
+            }
+    }
+    
+    .secx, 
+    .secxx, 
+    .secxxx {
+        color: #fff;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+
+        .wrap {
+            .num {
+                font-family: projFont2;
+                font-size: 62px;
+                font-weight: 500;
+            }
+            .titlet {
+                margin-bottom: .8rem;
+                font-size: 21px;
+            }
+            .para {
+                width: 550px;
+                font-size: 1rem;
+            }
+        }
+
+        .num {
+            font-family: projFont2;
+            font-size: 62px;
+            font-weight: 500;
+        }
+        .titlet {
+            margin-bottom: .8rem;
+            font-size: 21px;
+        }
+        .para {
+            width: 500px;
+            font-size: 1rem;
+        }
+    }
+}

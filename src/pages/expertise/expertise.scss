@@ -1,0 +1,21 @@
+.expertise {
+
+    .nav {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        list-style: none;
+        gap: 1.5rem;
+        padding: .5rem 1.7rem;
+
+        li {
+            color: rgba(41, 41, 41, 0.4);
+            font-weight: 600;
+            cursor: pointer;
+            transition: 250ms ease;
+        }
+        .active {
+            color: #292929;
+        }
+    }
+}

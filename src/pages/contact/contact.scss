@@ -1,0 +1,103 @@
+.contact {
+
+    .flex-form {
+        background-color: #000;
+        color: #FFF;
+        padding: 3rem 7.5rem 1rem 7.5rem;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        align-items: baseline;
+        gap: 15rem;
+        box-sizing: border-box;
+
+        .left {
+            .title {
+                font-size: 40px;
+                width: max-content;
+            }
+        }
+        .right {
+            form {
+                padding: 2rem 0;
+
+                button {
+                    background-color: #000;
+                    margin-bottom: 5rem;
+                    color: #FFF;
+                    font-size: 18px;
+                    border: none;
+                    cursor: pointer;
+                    border-bottom: 2px solid #FFF;
+                    outline: none;
+                    padding-bottom: 2px;
+                    transition: 250ms ease;
+
+                    &:hover {
+                        transform: scale(.9);
+                    }
+                }
+
+                .tip {
+                    font-size: 21px;
+                    line-height: 30px;
+                    margin-bottom: 3rem;
+                }
+                
+                
+                .input {
+                    margin-bottom: 5rem;
+
+                    
+                    input,
+                    select {
+                        padding: .8rem 1rem .8rem 0;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: #fff;
+                        background-color: #000;
+                        border-bottom: 1px solid #FFFFFF;
+
+                        &::placeholder {
+                            color: #fff;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    label {
+                        color: #fff;
+                    }
+
+                    textarea {
+                        background-color: #fff;
+                        margin-top: .5rem;
+                        padding: .8rem 1rem .8rem 0;
+                        border: none;
+                        outline: none;
+                        box-sizing: border-box;
+                        padding: 1rem;
+                        width: 100%;
+                        color: #000;
+                    }
+
+                    select {
+                        option {
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+                .yt {
+                   margin-bottom: 1rem !important; 
+                }
+                .flexinput {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .sm {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

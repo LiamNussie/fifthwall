@@ -1,0 +1,135 @@
+.about {
+    
+    .sec1 {
+        color: #000;
+        padding: 4rem;
+        margin: 2rem 0;
+        font-weight: 500;
+        font-size: 21px;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+        .title {
+            margin-bottom: 1.5rem;
+        }
+
+        .cont {
+            .top {
+                margin-bottom: 1.5rem;
+            }
+            .para {
+                width: 800px;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+                
+            }
+            .more {
+                font-size: .9rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .nx {
+        border-top: none;
+    }
+    .sec3 {
+        color: #000;
+        padding: 2rem 4rem;
+        margin: 2rem 0;
+        font-weight: 500;
+
+        .title {
+            margin-bottom: 1.5rem;
+        }
+
+        .cont {
+            .top {
+                margin-bottom: 1.5rem;
+            }
+            .para {
+                width: 600px;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+                
+            }
+            .more {
+                font-size: .9rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .sec2 {
+        color: #000;
+        padding: 4rem;
+        font-weight: 500;
+        display: flex;
+        font-size: 21px;
+        justify-content: flex-end;
+
+        .wrap {
+
+            .title {
+                margin-bottom: 1.5rem;
+            }
+    
+            .cont {
+                .top {
+                    margin-bottom: 1rem;
+                }
+                .para {
+                    width: 760px;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                    
+                }
+                .more {
+                    font-size: .9rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+    .bg1 {
+        height: 650px;
+        background-color: gray;
+        background-image: url(./bg1.svg);
+        background-size: cover;
+    }
+    .bg2-wrap {
+        padding: 0 4rem;
+        .bg2 {
+            height: 780px;
+            background-color: gray;
+            background-image: url(./bg2.svg);
+            background-size: cover;
+        }
+    }
+    .bg3-wrap {
+        padding: 0 4rem;
+        .bg3 {
+            height: 780px;
+            background-color: gray;
+            background-image: url(./bg3.svg);
+            background-size: cover;
+        }
+    }
+    .last {
+        padding: 5rem 6rem 1rem 6rem;
+
+        .titlec {
+            color: #000;
+            font-weight: 500;
+            font-size: 21px;
+            margin-bottom: 2rem;
+        }
+
+        .inner {
+            height: 600px;
+            background-image: url(./clients.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+    }
+    
+}
