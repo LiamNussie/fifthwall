@@ -1,10 +1,29 @@
 import "./navbar.scss";
 import Logo from './logo.svg';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [colorChange, setColorChange] = useState(false);
+
+    const changeBackground = () => {
+            console.log(window.scrollY)
+            if (window.scrollY >= 66) {
+            setColorChange(true)
+            } else {
+            setColorChange(false)
+            }
+        }
+    useEffect(() => {
+        changeBackground()
+        // adding the event when scroll change Logo
+        window.addEventListener("scroll", changeBackground)
+      })
+
+    
+
     return (
-        <div className="navbar">
+        <div className="navbar" id={colorChange ? "bg" : null}>
             <Link to="/"><img src={Logo} alt="fifthway logo" /></Link>
             <ul className="links">
                 <Link style={{textDecoration: "none"}} to="/about"><li>About</li></Link>

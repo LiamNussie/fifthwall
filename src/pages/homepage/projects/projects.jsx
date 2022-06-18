@@ -1,98 +1,48 @@
 import "./projects.scss";
-import Img from './one.svg';
-import Two from './two.svg';
-import Three from './three.svg';
-import Four from './four.svg';
-import Five from './five.svg';
-import Six from './six.svg';
-import Seven from './seven.svg';
-import Eight from './eight.svg';
-import Nine from './nine.svg';
-import Ten from './ten.svg';
-import Eleven from './eleven.svg';
-import Twelve from './twelve.svg';
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import AppLoader from "../../../components/appLoader/appLoader";
+import Footer from "../../../components/footer/footer";
 
-const projects = [
-    {
-        client: "Starck Project Services",
-        name: "Onyx Residences",
-        img: Img
-    },
-    {
-        client: "LLO Nominees | ECAD Architects",
-        name: "Pathenon Residences",
-        img: Two
-    },
-    {
-        client: "Merastar",
-        name: "The Summit",
-        img: Three
-    },
-    {
-        client: "Polystyrene Industries Limited",
-        name: "Ozidu Place",
-        img: Four
-    },
-    {
-        client: "Polystyrene Industries Limited",
-        name: "Law School Apartments",
-        img: Five
-    },
-    {
-        client: "Onnan Unity",
-        name: "The Askia Villas",
-        img: Six
-    },
-    {
-        client: "Starck Project Services",
-        name: "Magnolia",
-        img: Seven
-    },
-    {
-        client: "Ashbert Group",
-        name: "Abraka Turf and Country Club ",
-        img: Eight
-    },
-    {
-        client: "Realbanc Limited",
-        name: "Realbanc",
-        img: Nine
-    },
-    {
-        client: "RDD Associates",
-        name: "RDD Associates",
-        img: Ten
-    },
-    {
-        client: "Case Study",
-        name: "Ogun State",
-        img: Eleven
-    },
-    {
-        client: "Case Study",
-        name: "Sanctum Hills Retirement Village ",
-        img: Twelve
-    }
-]
+const Projects = ({text, showNav, view}) => {
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-const Projects = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        axios.get("https://fifthwall.herokuapp.com/projects")
+        // .then(res => console.log(res?.data))
+        .then(res => setProjects(res?.data))
+        .then(res => setLoading(false))
+        .catch(err => console.log(err))
+    }, [])
+
     return (
         <div className="projects">
-            <p className="title">Featured Projects</p>
+            <p className="title">{text}</p>
+            {loading ?<AppLoader /> : 
+            <>
+            <br />
+            <br />
             <div className="proj-list">
-                {projects.map(({name, client, img}, index) => {
+                {projects.filter(d => view === "home" ? d.featured : d.name).map(({name, client, thumbImg, _id: id}) => {
                     return (
-                        <div data-aos="slide-up" style={{backgroundImage: `url(${img})`}} className="project" key={index}>
+                        <div onClick={() => navigate(`/projects/${id}`, {state: {id: id}})} data-aos="slide-up" style={{backgroundImage: `url(${thumbImg})`}} className="project" key={id}>
                             {/* <div className="overlay">
                                 <p className="name">{name}</p>
                                 <p className="client">{client}</p>
                             </div> */}
+                            
                             <p className="name">{name}</p>
                             <p className="client">{client}</p>
                         </div>
                     )
                 })}
             </div>
+            {showNav && <Footer />}
+            </>}
         </div>
     )
 }

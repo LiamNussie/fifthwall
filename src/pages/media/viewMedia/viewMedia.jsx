@@ -3,13 +3,18 @@ import Navbar from "../../../components/navbar/navbar";
 import Footer from "../../../components/footer/footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
+import AppLoader from "../../../components/appLoader/appLoader";
 
 
 const ViewMedia = (props) => {
     const [media, setMedia] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const id = props?.location?.state?.id
+    const location = useLocation();
+
+    console.log(location)
+    const id = location?.state?.id
 
     useEffect(() => {
         axios.get(`https://api-fiffthwall.herokuapp.com/api/feed/${id}`)
@@ -22,7 +27,7 @@ const ViewMedia = (props) => {
     return (
         <div className="view-media">
             <Navbar />
-            {loading ? <p>loading...</p> :
+            {loading ? <AppLoader /> :
             <>
             <div data-aos="fade" className="timg" style={{backgroundImage: `url(${media?.img})`}}></div>
             <div className="bottomm">
@@ -31,7 +36,7 @@ const ViewMedia = (props) => {
                     <p className="titlem">{media?.name}</p>
                     {media?.desc?.comment.map((i, index) => {
                         return (
-                            <p className="para" key={index}>{i}</p>
+                            <p className="parad" key={index}>{i}</p>
                         )
                     })}
                     <div className="descimg" style={{backgroundImage: `url(${media?.desc?.image})`}}></div>

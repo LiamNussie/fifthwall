@@ -21,7 +21,8 @@ const Homepage = () => {
             <video autoPlay loop src={Vid}></video>
             {/* <p className="paray">Fifthwall is a full service, integrated design and marketing agency, based in Lagos, committed to creating value and sustainable growth for the property sector. </p> */}
             <Info />
-            <Projects />
+            
+            <Projects text="Featured Projects" showNav={false} view="home" />
             <div data-aos="fade-up" className="exper">
                 <p className="title">Our Expertise</p>
                 <div className="cont">
@@ -30,7 +31,7 @@ const Homepage = () => {
                     <Link to="/expertise" style={{textDecoration: "none", color: "#fff"}}><p className="more">Learn More</p></Link>
                 </div>
             </div>
-            <div className="banner"></div>
+            <div className="banner" style={{backgroundImage: "url(https://res.cloudinary.com/giftguy/image/upload/v1655561130/q1_xv8ofg.png)"}}></div>
             <div data-aos="fade-up" className="about">
                 <p className="title">A Multidisciplinary Approach</p>
                 <div className="cont">

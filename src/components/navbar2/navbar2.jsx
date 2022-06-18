@@ -3,6 +3,7 @@ import Logo from './logo.svg';
 import { NavLink } from "react-router-dom";
 
 const Navbar2 = () => {
+
     return (
         <div className="navbar2">
             <NavLink to="/"><img src={Logo} alt="fifthway logo" /></NavLink>

@@ -11,8 +11,9 @@ import Services from './pages/services/services';
 import Media from './pages/media/media';
 import Career from './pages/career/career';
 import Contact from './pages/contact/contact';
-import Projects from './pages/projects/projects';
 import ViewMedia from './pages/media/viewMedia/viewMedia';
+import ViewProjects from './pages/projects/viewProjects/viewProjects';
+import ProjectsP from './pages/projects/projects';
 
 function App() {
   useEffect(() => {
@@ -28,8 +29,9 @@ function App() {
             <Route path="/careers" element={<Career />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/media" element={<Media />} />
-            <Route path="/view-media" element={<ViewMedia />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/media/:mediaId" element={<ViewMedia />} />
+            <Route path="/projects" element={<ProjectsP />} />
+            <Route path="projects/:projectId" element={<ViewProjects />} />
           </Routes>
       </div>
   );

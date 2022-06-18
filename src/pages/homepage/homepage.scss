@@ -95,6 +95,12 @@
         }
     }
 
+    .title {
+        padding: 2.5rem 6rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
     .exper {
         background-color: #000;
         color: #fff;
@@ -143,8 +149,6 @@
     }
     .banner {
         height: 774px;
-        background-image: url(./banner.svg);
-        // background-color: gray;
         background-size: cover;
     }
     .about {

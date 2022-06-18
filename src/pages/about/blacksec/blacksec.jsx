@@ -12,10 +12,10 @@ const Blacksec = () => {
                     <p className="titlet">Discovery & Strategy</p>
                     <p className="para">First things first — we need to get familiar. We assess your vision, goals and market with exercises that provide insight and help us develop a strategy that best positions your brand and project.</p>
                 </div>
-                <img src={Disc} alt="collab" />
+                <img src="https://res.cloudinary.com/giftguy/image/upload/v1655566935/discovery_wjx2zw.gif" alt="collab" />
             </div>
             <div className="secxx">
-                    <img src={Collab} alt="collab" />
+                    <img src="https://res.cloudinary.com/giftguy/image/upload/v1655566935/collab_dyp9qc.gif" alt="collab" />
                 <div className="wrap">
                     <h1 className="num">02</h1>
                     <p className="titlet">Collaboration, Exploration, & Design</p>
@@ -28,7 +28,7 @@ const Blacksec = () => {
                     <p className="titlet">Production & Delivery</p>
                     <p className="para">To ensure timelines and budgets met, we handle the final production of your project. All assets and printed materials will be delivered to you as they are completed.</p>
                 </div>
-                <img src={Prod} alt="collab" />
+                <img src="https://res.cloudinary.com/giftguy/image/upload/v1655566935/production_cu112l.gif" alt="collab" />
             </div>
         </div>
     )

@@ -1,10 +1,11 @@
 import Footer from "../../components/footer/footer";
 import Navbar2 from "../../components/navbar2/navbar2";
 import "./media.scss";
-// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
+import AppLoader from "../../components/appLoader/appLoader";
 
 
 const Media = () => {
@@ -19,17 +20,18 @@ const Media = () => {
              .catch(err => console.log(err))
     }, [])
 
-    // const history = useHistory();
+   const navigate = useNavigate();
+
     return (
         <div className="media">
             <Navbar2 />
             <br />
             <br />
             <div className="proj-list">
-                {loading ? <p>loading media...</p> :
+                {loading ? <AppLoader /> :
                 media.map(({name, date, img, _id: id}, index) => {
                     return (
-                        <div data-aos="slide-up" style={{backgroundImage: `url(${img})`, backgroundPosition: "top"}} className="project" key={index}>
+                        <div onClick={() => navigate(`/media/${id}`, {state: {id: id}})} data-aos="slide-up" style={{backgroundImage: `url(${img})`, backgroundPosition: "top"}} className="project" key={index}>
                             <div className="overlay"></div>
                             <p className="name">{name}</p>
                             <p className="date">{moment().calendar(date)}</p>
