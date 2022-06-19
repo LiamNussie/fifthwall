@@ -13,8 +13,13 @@
         display: flex;
 
         .active {
-            border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
+            span {
+                display: block;
+            }
         }
+
+        
 
         li {
             list-style: none;
@@ -41,6 +46,16 @@
 
             &:hover::after {
                 transform: scaleX(1);
+            }
+
+            span {
+                position: absolute;
+                font-size: 3rem;
+                border-radius: 50%;
+                top: -215%;
+                left: 35%;
+                display: none;
+                transition: 250ms ease;
             }
         }
         

@@ -23,17 +23,17 @@ const Homepage = () => {
             <Info />
             
             <Projects text="Featured Projects" showNav={false} view="home" />
-            <div data-aos="fade-up" className="exper">
-                <p className="title">Our Expertise</p>
-                <div className="cont">
-                    <p className="top">Shaping the brands that build our future.</p>
-                    <p className="para">Fifthwall, has a vast degree of experience across several disciplines which keep our ideas fresh and our thinking ahead of its time. Working with real estate developers, agents, architects, property specialist and industry stakeholders; we help shape concepts through strategic storytelling, engaging visuals and innovative technologies that leave a lasting impression. </p>
+            <div data-aos="fade-up" className="experh">
+                <p className="titleh">Our Expertise</p>
+                <div className="conth">
+                    <p className="toph">Shaping the brands that build our future.</p>
+                    <p className="parah">Fifthwall, has a vast degree of experience across several disciplines which keep our ideas fresh and our thinking ahead of its time. Working with real estate developers, agents, architects, property specialist and industry stakeholders; we help shape concepts through strategic storytelling, engaging visuals and innovative technologies that leave a lasting impression. </p>
                     <Link to="/expertise" style={{textDecoration: "none", color: "#fff"}}><p className="more">Learn More</p></Link>
                 </div>
             </div>
             <div className="banner" style={{backgroundImage: "url(https://res.cloudinary.com/giftguy/image/upload/v1655561130/q1_xv8ofg.png)"}}></div>
             <div data-aos="fade-up" className="about">
-                <p className="title">A Multidisciplinary Approach</p>
+                <p className="titlem">A Multidisciplinary Approach</p>
                 <div className="cont">
                     <p className="para">Fifthwall is a blend of creative thinkers, strategists and artists who thrive on collaborative relationships. Our multidisciplinary nature and comprehensive suite of specialised integrated services makes us a model partner for our clients.</p>
                     <p className="para">Our people work to position each project in the most desirable, refined, and elevated way possible, as a result transforming them into some of the most distinctive properties and products to market.</p>

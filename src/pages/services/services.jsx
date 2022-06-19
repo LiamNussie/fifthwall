@@ -39,7 +39,12 @@ import Sixxxxx from "./servicesarchitecture/six.png";
 import Sevenxxxx from "./servicesarchitecture/seven.png";
 import Eightxxxx from "./servicesarchitecture/eight.png";
 
-const gallery = [One, Two, Three, Four, Five, Six];
+const gallery = ["https://res.cloudinary.com/giftguy/image/upload/v1655626356/01_brand-gif_unljlo.gif",
+ "https://res.cloudinary.com/giftguy/image/upload/v1655626372/09b_font_awnek4.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655626379/11b_ipad_aaq0sy.png",
+   "https://res.cloudinary.com/giftguy/image/upload/v1655626366/HEADER_IMAGE_mwly4a.gif",
+    "https://res.cloudinary.com/giftguy/image/upload/v1655626376/05_brochure_uyo4ac.png",
+     "https://res.cloudinary.com/giftguy/image/upload/v1655626379/15b_edited_mockup8_mvslnq.png"];
 const servicesbranding = [
   "Brand Identity",
   "Brand Campaign",
@@ -58,7 +63,11 @@ const servicesbranding = [
   "Outdoor/Indoor Signage",
   "Signage Conceptualization",
 ];
-const gallery2 = [Onex, Twox, Threex, Fourx, Fivex];
+const gallery2 = ["https://res.cloudinary.com/giftguy/image/upload/v1655626669/10b_digital_mix_bqht0h.png",
+ "https://res.cloudinary.com/giftguy/image/upload/v1655626669/11b_web-mockupB_jyy2vv.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655626672/07_realbanc_webMockup_h5rhgk.gif",
+   "https://res.cloudinary.com/giftguy/image/upload/v1655626666/06b_allianz-webpages_slbucx.png",
+    "https://res.cloudinary.com/giftguy/image/upload/v1655626668/10_ipad_kzmlsd.png"];
 const servicesdigital = [
   "Digital Design & Strategy",
   "E-Newsletters",
@@ -77,8 +86,11 @@ const servicesdigital = [
   "Search Engine Optimization (SEO)",
   "Social Media Management",
 ];
-const gallery3 = [Onexx, Twoxx, Threexx, Fourxx];
-const video3 = [Fivexx];
+const gallery3 = ["https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexelsb-george-milton-6953873_njiczp.png",
+ "https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexels-the-lazy-artist-gallery-4352621_azakcu.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexels-the-lazy-artist-gallery-4352621_azakcu.png",
+   "https://res.cloudinary.com/giftguy/image/upload/v1655626914/31_billboard_vzr0pq.png"];
+const video3 = ["https://res.cloudinary.com/giftguy/video/upload/v1655626944/Pexels_Videos_2450251_traqhz.mp4"];
 const servicesintegratedmarketing = [
   "Market research",
   "Marketing planning",
@@ -94,16 +106,18 @@ const servicesintegratedmarketing = [
 ];
 
 const gallery4 = [
-  Onexxx,
-  Threexxx,
-  Fourxxx,
-  Fivexxx,
-  Sevenxxx,
-  Eightxxx,
-  Ninexxx,
-  Tenxxx,
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627247/one_t6ddid.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627256/three_pwuzfm.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627240/four_omshxb.gif",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627233/five_rirgac.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627256/seven_cqjndu.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627233/eight_lqpoee.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627239/nine_foc9ku.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655627255/ten_gevicc.png",
 ];
-const video4 = [Twoxxx, Sixxxx, Elevenxxx];
+const video4 = ["https://res.cloudinary.com/giftguy/video/upload/v1655627356/two_s2vcbr.mp4",
+ "https://res.cloudinary.com/giftguy/video/upload/v1655627387/six_pmyzlh.mp4",
+  "https://res.cloudinary.com/giftguy/video/upload/v1655627326/eleven_uw68ta.mp4"];
 const servicesvisualization = [
   "Art Direction",
   "Illustrations",
@@ -118,7 +132,14 @@ const servicesvisualization = [
   "Architectural Animations",
 ];
 
-const gallery5 = [Onexxxx, Twoxxxx, Threexxxx, Fourxxxx, Fivexxxx, Sixxxxx, Sevenxxxx, Eightxxxx];
+const gallery5 = ["https://res.cloudinary.com/giftguy/image/upload/v1655628899/one_bmd4h9.png",
+ "https://res.cloudinary.com/giftguy/image/upload/v1655628899/two_ctgubv.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655628899/three_q4bm1l.png",
+   "https://res.cloudinary.com/giftguy/image/upload/v1655628898/four_pbfthl.png",
+    "https://res.cloudinary.com/giftguy/image/upload/v1655628899/five_ovcye0.gif",
+     "https://res.cloudinary.com/giftguy/image/upload/v1655628899/six_ffti4w.png",
+      "https://res.cloudinary.com/giftguy/image/upload/v1655628898/seven_f7w3zs.png",
+       "https://res.cloudinary.com/giftguy/image/upload/v1655628898/seven_f7w3zs.png"];
 const servicesarchitecture = [
   "Conceptual Sketches",
   "Project Consulting",
