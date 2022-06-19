@@ -20,6 +20,7 @@
 
     .links {
         display: flex;
+        transition: 250ms ease;
 
         li {
             list-style: none;
@@ -49,5 +50,13 @@
         }
         
 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        .links {
+            display: none;
+        }
     }
 }

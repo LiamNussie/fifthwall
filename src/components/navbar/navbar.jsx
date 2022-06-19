@@ -2,9 +2,11 @@ import "./navbar.scss";
 import Logo from './logo.svg';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Hamburger from "../hamburger/hamburger";
 
 const Navbar = () => {
     const [colorChange, setColorChange] = useState(false);
+    const [navOpen, setNavOpen] = useState(false)
 
     const changeBackground = () => {
             console.log(window.scrollY)
@@ -34,6 +36,7 @@ const Navbar = () => {
                 <Link style={{textDecoration: "none"}} to="/careers"><li>Careers</li></Link>
                 <Link style={{textDecoration: "none"}} to="/contact"><li>Contact</li></Link>
             </ul>
+            <Hamburger active={navOpen} setActive={setNavOpen} />
         </div>
     )
 }
