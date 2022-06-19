@@ -4,12 +4,6 @@ import Navbar2 from "../../components/navbar2/navbar2";
 import Clients from "../about/clients/clients";
 import "./expertise.scss";
 import ReuseTemplate from "./reuseTemplate/reuseTemplate";
-import Residential from "./residential.svg";
-import Commercial from "./commercial.svg";
-import Hospitality from "./hospitality.svg";
-import Place from "./place.svg";
-import Corporate from "./corporate.svg";
-import Luxury from "./luxury.svg";
 
 const Expertise = () => {
     const [page, setPage] = useState("residential");
