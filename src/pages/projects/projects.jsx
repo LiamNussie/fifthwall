@@ -7,6 +7,7 @@ const ProjectsP = () => {
     return (
         <div className="projects">
             <Navbar2 />
+            <br />
             <Projects showNav={true} view="projects" />
         </div>
     )

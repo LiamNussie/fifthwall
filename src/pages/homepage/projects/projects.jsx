@@ -21,11 +21,11 @@ const Projects = ({text, showNav, view}) => {
 
     return (
         <div className="projects">
-            <p className="title">{text}</p>
+            {text && <p className="title">{text}</p>}
             {loading ?<AppLoader /> : 
             <>
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
             <div className="proj-list">
                 {projects.filter(d => view === "home" ? d.featured : d.name).map(({name, client, thumbImg, _id: id}) => {
                     return (
