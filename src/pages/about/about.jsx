@@ -14,7 +14,7 @@ const About = () => {
                     <p className="para">Fifthwall is a full service, integrated design and marketing agency committed to creating value and sustainable growth for the property sector. Guided by research and strategic thinking, we build iconic brands and shape memorable experiences that deliver significant impact within the built environment.</p>
                 </div>
             </div>
-            <div data-aos="fade-up" className="bg1"></div>
+            <img className="bg1" src="https://res.cloudinary.com/giftguy/image/upload/v1655566649/a1_lt04ui.png" alt="bg1" />
             <div data-aos="fade-up" className="sec2">
                 <div className="wrap">
                     <p className="title">Our Mission</p>

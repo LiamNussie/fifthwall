@@ -68,3 +68,27 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1100px) {
+    .blacksec {
+        padding: 2rem;
+
+        .secx, 
+        .secxx, 
+        .secxxx {
+            gap: 3rem;
+            .wrap {
+                .num {
+                    font-size: 52px;
+                }
+                .titlet {
+
+                }
+                .para {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

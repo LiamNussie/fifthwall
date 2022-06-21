@@ -92,8 +92,7 @@
     .bg1 {
         height: 650px;
         background-color: gray;
-        background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655566649/a1_lt04ui.png);
-        background-size: cover;
+        width: 100%;
     }
     .bg2-wrap {
         padding: 0 4rem;
@@ -132,4 +131,48 @@
         
     }
     
+}
+
+@media screen and (max-width: 1100px) {
+    .about {
+        .sec1 {
+            padding: 2rem;
+            font-size: 18px;
+
+            .cont {
+                .para {
+                    width: 100%;
+                }
+            }
+        }
+        .sec2 {
+            font-size: 18px;
+            padding: 2rem;
+
+            .wrap {
+                .cont {
+                    .para {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .bg1 {
+            height: 500px;
+        }
+        .bg2-wrap {
+            padding: 0 2rem;
+
+            .bg2 {
+                height: 500px;
+            }
+        }
+        .bg3-wrap {
+            padding: 0 2rem;
+
+            .bg3 {
+                height: 500px;
+            }
+        }
+    }
 }

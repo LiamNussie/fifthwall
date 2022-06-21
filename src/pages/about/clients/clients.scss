@@ -10,11 +10,22 @@
         }
 
         .inner {
-            height: 600px;
+            // height: 600px;
             background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655566783/clients_dot5gt.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
         
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .client {
+        .last {
+            padding: 3rem 2rem 2rem 2rem;
+        }
+        .inner {
+            height: 200px !important;
+        }
     }
 }

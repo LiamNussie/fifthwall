@@ -31,9 +31,10 @@
     }
     .bg {
         height: 578px;
-        background-color: gray;
-        background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655573203/c_wozbbm.png);
-        background-size: cover;
+        width: 100%;
+        // background-color: gray;
+        // background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655573203/c_wozbbm.png);
+        // background-size: cover;
     }
     .sec2 {
         color: #000;
@@ -140,5 +141,49 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .career {
+        .sec1 {
+            padding: 2rem;
+            font-size: 18px;
+            margin: 1rem 0 2rem 0;
+
+            .cont {
+                .para {
+                    width: 100%;
+                }
+            }
+        }
+        .sec2 {
+            padding: 2rem;
+            font-size: 18px;
+
+            .cont {
+                .para {
+                    width: 100%;
+                }
+            }
+        }
+        .bg {
+            height: 400px;
+        }
+        .jobs {
+            padding: 0 2rem 2rem 2rem;
+
+            .job {
+                .header {
+                    img {
+                        width: 3.5%;
+                    }
+                }
+                .body {
+                    width: 100%;
+                }
+            }
+
+        }
     }
 }

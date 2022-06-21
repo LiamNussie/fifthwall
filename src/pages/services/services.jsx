@@ -53,7 +53,7 @@ const servicesdigital = [
 ];
 const gallery3 = ["https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexelsb-george-milton-6953873_njiczp.png",
  "https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexels-the-lazy-artist-gallery-4352621_azakcu.png",
-  "https://res.cloudinary.com/giftguy/image/upload/v1655626921/pexels-the-lazy-artist-gallery-4352621_azakcu.png",
+  "https://res.cloudinary.com/giftguy/image/upload/v1655626918/28b_gift-bag_pli6ji.png",
    "https://res.cloudinary.com/giftguy/image/upload/v1655626914/31_billboard_vzr0pq.png"];
 const video3 = ["https://res.cloudinary.com/giftguy/video/upload/v1655626944/Pexels_Videos_2450251_traqhz.mp4"];
 const servicesintegratedmarketing = [

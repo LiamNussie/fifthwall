@@ -60,8 +60,9 @@ const ViewProjects = () => {
             <div className="visuals">
                 {project?.gallery?.map((i, index) => {
                     return (
-                        <div key={index} data-aos="fade-up" className="img" style={{backgroundImage: `url(${i})`, backgroundSize: "cover"}}></div>
-                    )
+                        // <div key={index} data-aos="fade-up" className="img" style={{backgroundImage: `url(${i})`, backgroundSize: "cover"}}></div>
+                        <img key={index} data-aos="fade-up" src={i} alt="gimg" className="img" />
+                        )
                 })}
                 <div className="halfs">
                     {project?.half?.map((i, index) => {

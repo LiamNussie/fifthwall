@@ -1,6 +1,15 @@
 .homepage {
     position: relative;
 
+    .video-holder {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
     video {
         width: 100%;
         position: relative;
@@ -9,6 +18,10 @@
         //     color: red;
         //     z-index: 20;
         // }
+    }
+    iframe {
+        width: 100%;
+        height: 100vh;
     }
     .paray {
         width: 581px;

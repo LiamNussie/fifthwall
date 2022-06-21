@@ -42,3 +42,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .templates {
+        padding: 3rem 2rem 2rem 2rem;
+
+        .topish {
+            // flex-direction: column;
+            flex-wrap: wrap;
+
+            .lefti {
+                .title {
+                    font-size: 18px;
+                    width: 100%;
+                    line-height: 30px;
+                }
+            }
+            .righti {
+                // margin-top: -14rem;
+            }
+        }
+    }
+}

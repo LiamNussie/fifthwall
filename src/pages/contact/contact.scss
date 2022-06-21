@@ -101,3 +101,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .contact {
+        .flex-form {
+            padding: 2rem 2rem 1rem 2rem;
+            flex-direction: column;
+            .left {
+                .title {
+                    font-size: 30px;
+                }
+            } 
+            .right {
+                margin-top: -14rem;
+                form {
+                    .tip {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

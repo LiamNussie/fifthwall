@@ -30,6 +30,7 @@ const ViewMedia = (props) => {
             {loading ? <AppLoader /> :
             <>
             <div data-aos="fade" className="timg" style={{backgroundImage: `url(${media?.img})`}}></div>
+            {/* <img src={media?.img} alt="timg" data-aos="fade" className="timg" /> */}
             <div className="bottomm">
                 <div data-aos="fade-right" className="desc">
                     <p className="date">{media?.date.slice(0,10)}</p>

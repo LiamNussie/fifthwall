@@ -115,7 +115,8 @@ const Career = () => {
                     <p className="para">Fifthwall is a blend of creative thinkers, strategists and artists who thrive on collaborative relationships. Our multidisciplinary nature and comprehensive suite of specialised integrated services makes us a model partner for our clients.</p>
                 </div>
             </div>
-            <div className="bg" data-aos="fade-up"></div>
+            {/* <div className="bg" data-aos="fade-up"></div> */}
+            <img src="https://res.cloudinary.com/giftguy/image/upload/v1655573203/c_wozbbm.png" alt="bvc" data-aos="fade-up" className="bg" />
             <div data-aos="fade-up" className="sec2">
                 <p className="title">Join Our Team</p>
                 <div className="cont">
