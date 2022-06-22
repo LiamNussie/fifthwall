@@ -23,6 +23,11 @@ $stroke-color: #ffffff;
     transform: scale(.5) translateY(-15px);
     top: 0;
     right: 0;
+	z-index: 31;
+
+	#blck {
+		stroke: black !important;
+	}
 
 	.line {
 		fill: none;

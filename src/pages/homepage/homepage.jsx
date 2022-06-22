@@ -19,10 +19,11 @@ const Homepage = () => {
                 </div>
             </div> */}
 
-            <div className="video-holder">
-                <iframe src="https://player.vimeo.com/video/722566255?background=1&autoplay=1&;title=0&;byline=0&;portrait=0&;loop=1&;autopause=0&;muted=1&showinfo=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            {/* <video autoPlay loop src={Vid}></video> */}
+            {/* <div className="video-holder"> */}
+                 <video autoPlay loop src={Vid}></video>
+                {/* <iframe src="https://player.vimeo.com/video/722566255?background=1&autoplay=1&;title=0&;byline=0&;portrait=0&;loop=1&;autopause=0&;muted=1&showinfo=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> */}
+            {/* </div> */}
+           
 
             {/* <p className="paray">Fifthwall is a full service, integrated design and marketing agency, based in Lagos, committed to creating value and sustainable growth for the property sector. </p> */}
             <Info />

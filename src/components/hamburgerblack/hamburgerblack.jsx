@@ -4,7 +4,7 @@ const HamburgerB = ({active, setActive}) => {
   return (
     <div className="hamburgerb">
       <div className="container">
-        <div id="hamburgerb" className={active ? "open" : null}  onclick={() => setActive(prev => !prev)}>
+        <div id="hamburgerb" className={active ? "open" : null}  onClick={() => setActive(prev => !prev)}>
           <svg width="100" height="100" viewBox="0 0 100 100">
             <path
               className="line line1"

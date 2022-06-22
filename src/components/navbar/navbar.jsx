@@ -3,13 +3,14 @@ import Logo from './logo.svg';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Hamburger from "../hamburger/hamburger";
+import SideBar from "../sidebar/sidebar";
 
 const Navbar = () => {
     const [colorChange, setColorChange] = useState(false);
-    const [navOpen, setNavOpen] = useState(false)
+    const [navOpen, setNavOpen] = useState(false);
 
     const changeBackground = () => {
-            console.log(window.scrollY)
+            // console.log(window.scrollY)
             if (window.scrollY >= 66) {
             setColorChange(true)
             } else {
@@ -37,6 +38,7 @@ const Navbar = () => {
                 <Link style={{textDecoration: "none"}} to="/contact"><li>Contact</li></Link>
             </ul>
             <Hamburger active={navOpen} setActive={setNavOpen} />
+            {navOpen && <SideBar />}
         </div>
     )
 }

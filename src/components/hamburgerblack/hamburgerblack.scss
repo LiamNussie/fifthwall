@@ -23,6 +23,7 @@ $stroke-color: #000;
     transform: scale(.5) translateY(-15px);
     top: 0;
     right: 0;
+	z-index: 31;
 
 	.line {
 		fill: none;
