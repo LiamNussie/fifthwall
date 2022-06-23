@@ -30,17 +30,19 @@
                     font-size: 1.3rem;
                 }
 
-                &:hover {
-                    .overlay {
-                        animation: slideIn 250ms linear forwards;
-                    }
-                }
+                
             }
 
             .name {
                 margin-bottom: .6rem;
                 font-weight: 500;
                 font-size: 1.3rem;
+            }
+
+            &:hover {
+                .overlay {
+                    animation: slideIn 250ms linear forwards;
+                }
             }
         }
     }

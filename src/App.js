@@ -21,7 +21,6 @@ function App() {
   useEffect(() => {
     Aos.init({duration: 1000});
   }, []);
-
   
   return (
       <div className="App">
