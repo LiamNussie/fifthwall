@@ -37,7 +37,7 @@ const Homepage = () => {
                     <Link to="/expertise" style={{textDecoration: "none", color: "#fff"}}><p className="more">Learn More</p></Link>
                 </div>
             </div>
-            <img className="ban" src="https://res.cloudinary.com/giftguy/image/upload/v1655561130/q1_xv8ofg.png" alt="" />
+            <div className="ban" alt=""></div>
             {/* <div className="banner" style={{backgroundImage: "url(https://res.cloudinary.com/giftguy/image/upload/v1655561130/q1_xv8ofg.png)"}}></div> */}
             <div data-aos="fade-up" className="about">
                 <p className="titlem">A Multidisciplinary Approach</p>

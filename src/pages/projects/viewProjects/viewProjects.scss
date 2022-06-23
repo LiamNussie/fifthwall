@@ -172,7 +172,21 @@
             padding: 0 1rem;
 
             .img {
-                height: 500px;
+                height: auto;
+            }
+
+            .halfs {
+                .half {
+                    // height: 500px;
+                }
+            }
+            .tiled {
+                .tile {
+                    height: auto;
+                }
+            }
+            video {
+                height: auto;
             }
         }
 
@@ -185,7 +199,7 @@
             .lefti {
                 height: auto !important;
                 .liners {
-
+                    flex-wrap: wrap;
                     font-size: 14px;
                 }
                 .title {

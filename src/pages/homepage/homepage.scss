@@ -168,7 +168,10 @@
     }
     .ban {
         height: 774px;
-        width: 100%;
+        background-color: gray;
+        background-size: cover;
+        background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655561130/q1_xv8ofg.png);
+        // width: 100%;
     }
     .about {
         color: #fff;
@@ -257,6 +260,9 @@
                     font-size: 14px;
                 }
             }
+        }
+        .ban {
+            height: 500px;
         }
         .about {
             padding: 4rem 1rem 2rem 1rem;

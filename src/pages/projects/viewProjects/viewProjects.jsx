@@ -80,7 +80,7 @@ const ViewProjects = () => {
                 </div>
                 {project?.video?.map((i, index) => {
                     return (
-                        <video key={index} autoPlay loop src={i}></video>
+                        <video key={index} controls loop src={i}></video>
                     )
                 })}
                 

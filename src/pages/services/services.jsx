@@ -104,7 +104,7 @@ const gallery5 = ["https://res.cloudinary.com/giftguy/image/upload/v1655628899/o
     "https://res.cloudinary.com/giftguy/image/upload/v1655628899/five_ovcye0.gif",
      "https://res.cloudinary.com/giftguy/image/upload/v1655628899/six_ffti4w.png",
       "https://res.cloudinary.com/giftguy/image/upload/v1655628898/seven_f7w3zs.png",
-       "https://res.cloudinary.com/giftguy/image/upload/v1655628898/seven_f7w3zs.png"];
+      "https://res.cloudinary.com/giftguy/image/upload/v1655628898/eight_d2kq1l.png"];
 const servicesarchitecture = [
   "Conceptual Sketches",
   "Project Consulting",

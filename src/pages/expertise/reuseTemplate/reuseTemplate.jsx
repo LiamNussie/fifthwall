@@ -12,7 +12,7 @@ const ReuseTemplate = ({sideText, topText, bottomText, bg}) => {
                 </div>
             </div>
             {/* <div className="bg" style={{backgroundImage: `url(${bg})`}}></div> */}
-            <img className="bg" src={bg} alt="reimg" />
+            <div className="bg" style={{backgroundImage: `url(${bg})`}} alt="reimg"></div>
         </div>
     )
 }

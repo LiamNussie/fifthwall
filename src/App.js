@@ -14,13 +14,18 @@ import Contact from './pages/contact/contact';
 import ViewMedia from './pages/media/viewMedia/viewMedia';
 import ViewProjects from './pages/projects/viewProjects/viewProjects';
 import ProjectsP from './pages/projects/projects';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   useEffect(() => {
     Aos.init({duration: 1000});
   }, []);
+
+  
   return (
       <div className="App">
+        <ToastContainer position="bottom-center" />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />

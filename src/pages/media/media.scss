@@ -1,4 +1,4 @@
-.media {
+.media, .projects {
     .proj-list {
         display: flex;
         width: 100%;
@@ -13,18 +13,28 @@
             position: relative;
             cursor: pointer;
 
-            &:hover {
-
-            }
-
             .overlay {
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                linear-gradient: (0deg, rgba(21, 21, 21, 0.18));
+                background-color: rgba(0, 0, 0, 1);
                 padding: 2rem;
+                transform: translateY(-500%);
+
+
+                .name {
+                    margin-bottom: .6rem;
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                }
+
+                &:hover {
+                    .overlay {
+                        animation: slideIn 250ms linear forwards;
+                    }
+                }
             }
 
             .name {
@@ -45,5 +55,14 @@
                 }
             }
         }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-500%);
+    }
+    to {
+        transform: translateY(0);
     }
 }

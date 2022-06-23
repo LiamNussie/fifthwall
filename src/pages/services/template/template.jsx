@@ -38,7 +38,7 @@ const Template = ({gallery, text1, text2, text3, text4, services, video}) => {
         {video?.length && 
         video.map((i, index) => {
           return (
-            <video data-aos="fade-up" key={index} autoPlay loop src={i}></video>
+            <video data-aos="fade-up" key={index} controls loop src={i}></video>
           )
         })
         }

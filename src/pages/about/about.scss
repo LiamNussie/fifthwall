@@ -90,9 +90,11 @@
         
     }
     .bg1 {
-        height: 650px;
+        height: 780px;
         background-color: gray;
-        width: 100%;
+        background-image: url(https://res.cloudinary.com/giftguy/image/upload/v1655566649/a1_lt04ui.png);
+        background-size: cover;
+        // width: 100%;
     }
     .bg2-wrap {
         padding: 0 4rem;
@@ -159,6 +161,7 @@
         }
         .bg1 {
             height: 500px;
+            // height: auto;
         }
         .bg2-wrap {
             padding: 0 1rem;

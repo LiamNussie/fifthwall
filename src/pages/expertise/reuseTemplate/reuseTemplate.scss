@@ -2,7 +2,10 @@
     padding: 0 !important;
     .bg {
         height: 578px;
-        width: 100%;
+        background-color: gray;
+        background-size: cover;
+        background-position: center;
+        // width: 100%;
     }
     .black {
         background-color: #000;

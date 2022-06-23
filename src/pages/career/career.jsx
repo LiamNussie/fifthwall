@@ -116,7 +116,7 @@ const Career = () => {
                 </div>
             </div>
             {/* <div className="bg" data-aos="fade-up"></div> */}
-            <img src="https://res.cloudinary.com/giftguy/image/upload/v1655573203/c_wozbbm.png" alt="bvc" data-aos="fade-up" className="bg" />
+            <div data-aos="fade-up" className="bg"></div>
             <div data-aos="fade-up" className="sec2">
                 <p className="title">Join Our Team</p>
                 <div className="cont">
@@ -130,7 +130,7 @@ const Career = () => {
                         <div key={index} className="job">
                             <div onClick={() => toggle(index)} className="header">
                                 <p className="left tr">{title}</p>
-                                <p className="right tr">{jobType}</p>
+                                {/* <p className="right tr">{jobType}</p> */}
                                 <img src={Plusicon} id={clicked === index ? 'times' : null} alt="plus_icon" />
                             </div>
                            {clicked === index ? <div className="body">

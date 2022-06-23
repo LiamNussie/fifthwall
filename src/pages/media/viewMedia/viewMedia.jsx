@@ -40,7 +40,7 @@ const ViewMedia = (props) => {
                             <p className="parad" key={index}>{i}</p>
                         )
                     })}
-                    <div className="descimg" style={{backgroundImage: `url(${media?.desc?.image})`}}></div>
+                    <img className="descimgt" src={media?.desc?.image} />
                 </div>
                 {media?.section?.map(({banner, txt}, index) => {
                     return (
@@ -55,7 +55,7 @@ const ViewMedia = (props) => {
                                     </div>
                                 )
                             })}
-                            <div data-aos="fade-right" className="img" style={{backgroundImage: `url(${banner})`, backgroundSize: "cover"}}></div>
+                            <img data-aos="fade-right" className="imgx" src={banner} />
                         </div>
                     )
                 })}

@@ -30,10 +30,10 @@ const Projects = ({text, showNav, view}) => {
                 {projects.filter(d => view === "home" ? d.featured : d.name).map(({name, client, thumbImg, _id: id}) => {
                     return (
                         <div onClick={() => navigate(`/projects/${id}`, {state: {id: id}})} data-aos="slide-up" style={{backgroundImage: `url(${thumbImg})`}} className="project" key={id}>
-                            {/* <div className="overlay">
+                            <div className="overlay">
                                 <p className="name">{name}</p>
                                 <p className="client">{client}</p>
-                            </div> */}
+                            </div>
                             
                             <p className="name">{name}</p>
                             <p className="client">{client}</p>
