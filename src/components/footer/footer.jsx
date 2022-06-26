@@ -5,10 +5,14 @@ import Ig from './ig.svg';
 import Tw from './tw.svg';
 import Ln from './ln.svg';
 import Yt from './yt.svg';
+import Chev from "./chev.svg";
 
 const Footer = () => {
     return (
         <div className="footer">
+           <img onClick={() => window.scrollTo({ left: 0, top: 0, behavior: "smooth" })} className="chev" src={Chev} alt="chev" />
+            
+
             <div className="left">
                 <div className="top">
                     <p className="name">Fifthwall<br />(FWA Marketing Limited)</p>
@@ -19,7 +23,8 @@ const Footer = () => {
                 </div>
                 <div className="bottom">
                     <p className="tit">Telephone</p>
-                    <p className="phone">+234 (0) 810 904 1169</p>
+                    {/* <p className="phone">+234 (0) 810 904 1169</p> */}
+                    <a className="phone" href="tel:5554280940">+234 (0) 810 904 1169</a>
                 </div>
             </div>
             <div className="middle xc">
@@ -32,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className="bottom">
                     <p className="tit">General Inquiries</p>
-                    <p className="phone">contact@fifthwallagency.com</p>
+                    <a href="mailto:contact@fifthwallagency.com" className="phone">contact@fifthwallagency.com</a>
                 </div>
             </div>
             <div className="right cx">

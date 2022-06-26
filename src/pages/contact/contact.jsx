@@ -15,13 +15,6 @@ const Contact = () => {
     const [phone, setPhone] = useState('');
 
     const [loading, setLoading] = useState(false);
-
-    // const templateParams = {
-    //         fullName: fullName,
-    //         user_email: email,
-    //         message: `${message} from ${country}`,
-    //         reply_to: phone
-    //     };
      
        const data = {
                 service_id: 'fifth wall',
@@ -34,14 +27,7 @@ const Contact = () => {
                     reply_to: phone
                 }
        }
-    // const sendMessage = (e) => {
-    //     e.preventDefault()U1bsIqCzAmD5RB0O3
-    //     emailjs.send('fifth wall', 'template_87n19ia', templateParams, '')
-    //     .then((response) => console.log('SUCCESS!', response.status, response.text))
-    //     .then((response) => setLoading(true))
-    //     .then((response) => toast.success(response.text))
-    //     .catch(err => console.log('FAILED...', err))
-    // }
+  
     const sendMessage = async (e) => {
         e.preventDefault();
         setLoading(true)

@@ -32,10 +32,10 @@ const Media = () => {
                 media.map(({name, date, img, _id: id}, index) => {
                     return (
                         <div onClick={() => navigate(`/media/${id}`, {state: {id: id}})} data-aos="slide-up" style={{backgroundImage: `url(${img})`, backgroundPosition: "top"}} className="project" key={index}>
-                            <div className="overlay">
+                            {/* <div className="overlay">
                                 <p className="name">{name}</p>
                                 <p className="date">{moment().calendar(date)}</p>
-                            </div>
+                            </div> */}
                             <p className="name">{name}</p>
                             <p className="date">{moment().calendar(date)}</p>
                         </div>

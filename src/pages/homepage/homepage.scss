@@ -20,7 +20,25 @@
         //     color: red;
         //     z-index: 20;
         // }
+
+        
     }
+    .arrow {
+        text-align: center;
+
+        svg {
+            position: absolute;
+            cursor: pointer;
+            margin-top: -3.5rem;
+            transform: scale(3.6);
+            animation-name: bounce-2;
+            animation-timing-function: ease;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            // transform-origin: bottom;
+        }
+    }
+    
     iframe {
         width: 100%;
         height: 100vh;
@@ -279,4 +297,10 @@
             }
         }
     }
+}
+
+@keyframes bounce-2 {
+    0%   { transform: translateY(0) scale(3.6); }
+    50%  { transform: translateY(-20px) scale(3.6); }
+    100% { transform: translateY(0) scale(3.6); }
 }

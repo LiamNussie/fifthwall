@@ -41,7 +41,7 @@
 
             &:hover {
                 .overlay {
-                    animation: slideIn 250ms linear forwards;
+                    // animation: slideIn 250ms linear forwards;
                 }
             }
         }
@@ -60,11 +60,11 @@
     }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(-500%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
+// @keyframes slideIn {
+//     from {
+//         transform: translateY(-500%);
+//     }
+//     to {
+//         transform: translateY(0);
+//     }
+// }

@@ -3,7 +3,7 @@ import Navbar from "../../../components/navbar/navbar";
 import Footer from "../../../components/footer/footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import AppLoader from "../../../components/appLoader/appLoader";
 
 
@@ -29,7 +29,8 @@ const ViewProjects = () => {
             <Navbar />
             {loading ? <AppLoader /> :
             <>
-            <div data-aos="fade" className="timg" style={{backgroundImage: `url(${project?.bannerImg})`}}></div>
+            {/* <div data-aos="fade" className="timg" style={{backgroundImage: `url(${project?.bannerImg})`}}></div> */}
+            <img data-aos="fade" className="timg" src={project?.bannerImg} alt="timg" />
             <div data-aos="fade-right" className="topish">
                 <div className="lefti">
                 <p className="title">{project?.name}</p><br />
@@ -85,6 +86,12 @@ const ViewProjects = () => {
                 })}
                 
             </div>
+
+           <Link style={{textDecoration: "none", color: "#000"}} to="/projects">
+            <div className="all">
+                <p className="alltxt">All Projects</p>
+            </div>
+           </Link>
         
             <Footer />
             </>}
