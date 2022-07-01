@@ -42,6 +42,26 @@
                     line-height: 30px;
                     margin-bottom: 3rem;
                 }
+
+                .PhoneInput {
+
+                    input {
+                        padding: .8rem 1rem .8rem 0;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: #fff;
+                        background-color: #000;
+                        border-bottom: 1px solid #FFFFFF;
+                    }
+                    .PhoneInputCountry {
+                        .PhoneInputCountrySelect {
+                            background-color: #fff !important;
+                            margin-top: 200px;
+                    width: 200px;
+                        }
+                    }
+                }
                 
                 
                 .input {

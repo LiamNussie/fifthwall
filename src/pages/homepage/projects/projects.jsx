@@ -22,7 +22,7 @@ const Projects = ({text, showNav, view}) => {
     return (
         <div className="projects">
             {text && <p className="title">{text}</p>}
-            {loading ?<AppLoader /> : 
+            {!loading &&
             <>
             {/* <br />
             <br /> */}

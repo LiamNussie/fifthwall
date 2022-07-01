@@ -5,6 +5,9 @@ import emailjs from "@emailjs/browser"
 import { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input';
+import flags from 'react-phone-number-input/flags'
 
 const Contact = () => {
 
@@ -13,6 +16,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [country, setCountry] = useState('');
     const [phone, setPhone] = useState('');
+    const [value, setValue] = useState('')
 
     const [loading, setLoading] = useState(false);
      
@@ -62,7 +66,7 @@ const Contact = () => {
                         <div className="input">
                             <input required onChange={e => setEmail(e.target.value)} type="email" placeholder="Email*" />
                         </div>
-                        <div className="flexinput">
+                        {/* <div className="flexinput">
                             <div className="input sm">
                                 <select  onChange={e => setCountry(e.target.value)}>
                                     <option selected disabled>Country</option>
@@ -72,7 +76,16 @@ const Contact = () => {
                             <div className="input sm">
                                 <input onChange={e => setPhone(e.target.value)} type="tel" placeholder="Telephone" />
                             </div>
-                        </div>
+                        </div> */}
+                        <PhoneInput
+                            className="flexinput"
+                            defaultCountry="NG"
+                            placeholder="Enter phone number"
+                            value={phone}
+                            onChange={setPhone}
+                            flags={flags}
+                        />
+                        <br /><br /><br /><br />
                         <div className="input yt">
                             <label>Message*</label><br />
                             <textarea onChange={e => setMessage(e.target.value)} cols="30" rows="13"></textarea>

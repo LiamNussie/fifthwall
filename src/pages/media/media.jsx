@@ -28,7 +28,7 @@ const Media = () => {
             <br />
             <br />
             <div className="proj-list">
-                {loading ? <AppLoader /> :
+                {!loading &&
                 media.map(({name, date, img, _id: id}, index) => {
                     return (
                         <div onClick={() => navigate(`/media/${id}`, {state: {id: id}})} data-aos="slide-up" style={{backgroundImage: `url(${img})`, backgroundPosition: "top"}} className="project" key={index}>
